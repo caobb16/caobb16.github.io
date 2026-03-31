@@ -19,4 +19,5 @@ pin: true         # 置顶文章（博客主题常用）
 ``` shell
 # date # updated
 TZ=Asia/Shanghai date +%Y-%m-%dT%H:%M:%S%:z
+TZ=Asia/Shanghai date +%FT%T%:z
 ```
