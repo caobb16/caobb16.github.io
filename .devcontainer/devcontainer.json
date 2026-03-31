@@ -1,0 +1,20 @@
+// .devcontainer/devcontainer.json
+{
+  "name": "Minimal Mistakes Jekyll",
+  "image": "mcr.microsoft.com/devcontainers/ruby:3.2-bookworm",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "streetsidesoftware.code-spell-checker",
+        "yzhang.markdown-all-in-one",
+        "shd101wyy.markdown-preview-enhanced"
+      ]
+    }
+  },
+  "forwardPorts": [4000],
+  "postCreateCommand": "gem install bundler jekyll && bundle install",
+  "remoteUser": "vscode"
+}
